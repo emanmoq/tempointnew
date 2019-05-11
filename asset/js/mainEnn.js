@@ -218,10 +218,21 @@ $(window).scrollTop(0);
         });
               	  
 
-  if($('body').width()<500){
-    $('.flat-space').addClass('flat-space-carousel owl-carousel');
-}
-
+        if($('body').width()<500){
+            $('.flat-space').addClass('flat-space-carousel owl-carousel');
+            $(" .sideVideo .close ").click(function() {    
+                $(this).parent().animate({top:-1000,}, 200, function() {});
+                $(".Bigoverlay").css("display","none");
+            
+            });
+        }
+        else{
+            $(" .sideVideo .close ").click(function() {    
+                $(this).parent().animate({right:-1000,}, 200, function() {});
+                $(".Bigoverlay").css("display","none");
+            
+            })
+        }
   
   $('.flat-space-carousel').owlCarousel({
       loop:true,
