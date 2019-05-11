@@ -666,7 +666,7 @@ width:100%;
 }
 ul.nav{
     overflow: scroll;
-    height: 100vh;
+    height: 85vh;
 }
 .contactForm{
     display: none;
