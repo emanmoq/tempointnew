@@ -1,5 +1,4 @@
 $(document).ready(function () { 
-    $("mobileContact").validate();
 
 $(" .sideVideo .close ").click(function() {    
     $(this).parent().css("display","none");
@@ -20,8 +19,6 @@ $(window).scrollTop(0);
 
     $('form').validate();
    
-
-
 	  sideVideo=false;
 
       $(".sideMenu .national").click(function(e) {
@@ -115,7 +112,9 @@ $(window).scrollTop(0);
     });
     $(".contactus").click(function(){
         $(".mobileContact").css("display","block");
-		$('.mobileContact form').removeAttr('novalidate');
+        $('.mobileContact form').removeAttr('novalidate');
+        $(".mobileContact form").validate();
+
     });
 
     $(".navBtn").click(function() {
