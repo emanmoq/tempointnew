@@ -629,9 +629,7 @@ border:0;
     display:block;
 }
 @media (min-width: 320px) and (max-width: 767px){
-    nav.nav-pills{
-        height:100vh;
-    }
+    
     .nav-item:last-child{
         border-bottom: 0;
     }

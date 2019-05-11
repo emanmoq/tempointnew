@@ -626,9 +626,7 @@ border:0;
     display:block;
 }
 @media (min-width: 320px) and (max-width: 767px){
-    nav.nav-pills{
-        height:100vh;
-    }
+ 
     .nav-item:last-child{
         border-bottom: 0;
     }
@@ -662,6 +660,7 @@ width:100%;
     background: white;
     padding:0;
     z-index:444;
+    height: 100vh;
 }
 .contactForm{
     display: none;
@@ -713,6 +712,9 @@ width:100%;
 }
 .mobilelanguge,.mobileSocialIcons{
     display: block;
+}
+.mobilelanguge{
+    margin-top:11px;
 }
 .mobileSocialIcons{
     padding-top:30px;
