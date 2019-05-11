@@ -238,6 +238,7 @@ box-shadow: rgba(0, 0, 0, 0.03) 0px 3px 6px 3px;
     width:602px;
     height: 300px;
     border-radius: 5px;
+    padding:10px;
 }
 .videoCont iframe{
     width:100%;
@@ -716,6 +717,9 @@ width:100%;
 }
 .mobilelanguge,.mobileSocialIcons{
     display: block;
+}
+.mobilelanguge{
+    margin-top:11px;
 }
 .mobileSocialIcons{
     padding-top:30px;
