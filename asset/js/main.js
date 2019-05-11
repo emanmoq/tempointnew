@@ -115,14 +115,14 @@ $(window).scrollTop(0);
         
     });
 
-    $(window).scroll(function () {
+    $(window).scroll(function (e) {
         scrollTop = $(window).offset().top;
 
-        if(scrollTop=$("#projSection").offset().top){
+        if(scrollTop==$("#projSection").offset().top){
             $('.nav-link').removeClass('activeLink');
             $(".projectProp").addClass('activeLink');
         }
-        else if(scrollTop=$("#ourServices").offset().top){
+        else if(scrollTop==$("#ourServices").offset().top){
             $('.nav-link').removeClass('activeLink');
             $(".ourServicesLink").addClass('activeLink');
         }
@@ -146,8 +146,7 @@ $(window).scrollTop(0);
         
     });
   
-     
-
+    
     $(".contactus").click(function(){
         $(".mobileContact").css("display","block");
         $('.mobileContact form').removeAttr('novalidate');

@@ -354,6 +354,10 @@ margin-bottom:20px;
     display: inline-block;
     margin-top: 15px
 }
+.spaceBox:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 7px 3px;
+   
+}
 .flatSpaceSection{
     border-bottom:2px solid #F6F6F6;
     width:100%;
@@ -478,6 +482,10 @@ margin: 0 auto;}
     margin-top:20px;
     text-align: center;
 } 
+.servCont :hover{
+    transform: scale(1.1);
+cursor: pointer;
+}
 .footer{
     background-color: #55616A;
     color:white;
@@ -627,6 +635,13 @@ border:0;
 }
 .mainSlider.owl-carousel {
     display: none;
+}
+.carousel:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 7px 3px;
+    transition-duration: .2s;
+   
+    spaceBox
+
 }
 @media (min-width: 320px) and (max-width: 767px){
  
