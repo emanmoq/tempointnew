@@ -639,8 +639,6 @@ border:0;
 .carousel:hover{
     box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 7px 3px;
     transition-duration: .2s;
-   
-    spaceBox
 
 }
 @media (min-width: 320px) and (max-width: 767px){
@@ -859,7 +857,7 @@ position:fixed;
 .sideVideo{
     width:100%;
     top:-1000px;
-    right:0;
+    right:0 !important;
     height: 90vh;
     padding-top:50px;
     padding-bottom:50px;

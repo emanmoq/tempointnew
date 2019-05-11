@@ -20,14 +20,13 @@ $(window).scrollTop(0);
 
       $(".sideMenu .national").click(function(e) {
         
-          e.preventDefault();
 
 		  if(!sideVideo){
-			$(".sideVideo").animate({right:70,}, 400, function() {});
+			$(".sideVideo").animate({right:70,}, 200, function() {});
             $('.sideMenu .national').addClass('active');
             $(".Bigoverlay").css("display","block");
 		  }else{
-			$(".sideVideo").animate({right:-1000,}, 400, function() {});
+			$(".sideVideo").animate({right:-1000,}, 200, function() {});
             $('.sideMenu .national').removeClass('active');
             $(".Bigoverlay").css("display","none");
             
@@ -36,7 +35,7 @@ $(window).scrollTop(0);
 		  setTimeout(function(){
 			  sideVideo=!sideVideo
 			  
-          },400);
+          },200);
          
       });
 
@@ -44,10 +43,12 @@ $(window).scrollTop(0);
       $("body").children().not('.sideVideo').not('.sideMenu').not('.nationalBar').click(function(){
 			var leg=$('.youtube').attr("src");
             $('.youtube').attr("src",leg);
-          $(".sideVideo").animate({right:-735,}, 400, function() {});
-		  		$('.sideMenu .national').removeClass('active');
-
+          $(".sideVideo").animate({right:-735,}, 100, function() {});
+                  $('.sideMenu .national').removeClass('active');
+$("Bigoverlay").css("display","none")
       });
+
+
       
 
     $('.sliderSec-carousel').owlCarousel({
@@ -228,17 +229,27 @@ $(window).scrollTop(0);
               	  
 
   if($('body').width()<500){
+    $(".Bigoverlay").css("display","none");
+
     $('.flat-space').addClass('flat-space-carousel owl-carousel');
-    $(" .sideVideo .close ").click(function() {    
+    $(" .sideVideo .close ").click(function(e) {
         $(this).parent().animate({top:-1000,}, 200, function() {});
         $(".Bigoverlay").css("display","none");
     
     });
+    $(".Bigoverlay").click(function(e) {    
+        $(".collapse.navbar-collapse").css("display","none");
+        $(".Bigoverlay").css("display","none");
+
+
+    });
+    
 }
 else{
-    $(" .sideVideo .close ").click(function() {    
+    $(" .sideVideo .close ").click(function(e) {  
         $(this).parent().animate({right:-1000,}, 200, function() {});
         $(".Bigoverlay").css("display","none");
+        $('.sideMenu .national').removeClass('active');
     
     })
 }
