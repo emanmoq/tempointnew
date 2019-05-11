@@ -111,6 +111,37 @@ $(window).scrollTop(0);
           
         }
     });
+    $(window).scroll(function () {
+        scrollTop = $(window).scrollTop()
+
+        if(scrollTop>=$("#projSection").offset().top & scrollTop < $("#flatSection").offset().top ){
+            $('.nav-link').removeClass('activeLink');
+            $(".projectProp").addClass('activeLink');
+        }
+        else if(scrollTop>=$("#flatSection").offset().top & scrollTop < $("#faciltiisSection").offset().top ){
+            $('.nav-link').removeClass('activeLink');
+            $(".flatlink").addClass('activeLink');
+        }
+        else if(scrollTop>=$("#faciltiisSection").offset().top & scrollTop < $("#flatSpaceSection").offset().top){
+            $('.nav-link').removeClass('activeLink');
+            $(".faciltiis").addClass('activeLink');
+        }
+        else if(scrollTop>=$("#flatSpaceSection").offset().top & scrollTop < $("#OurProjects").offset().top){
+            $('.nav-link').removeClass('activeLink');
+            $(".flatSpace").addClass('activeLink');
+        }
+     
+        else if(scrollTop>=$("#OurProjects").offset().top & scrollTop < $("#ourServices").offset().top ){
+            $('.nav-link').removeClass('activeLink');
+            $(".ourProjectLink").addClass('activeLink');
+        }
+        else if(scrollTop>=$("#ourServices").offset().top){
+            $('.nav-link').removeClass('activeLink');
+            $(".ourServicesLink").addClass('activeLink');
+        }
+
+    });
+  
     $(".contactus").click(function(){
         $(".mobileContact").css("display","block");
         $('.mobileContact form').removeAttr('novalidate');
