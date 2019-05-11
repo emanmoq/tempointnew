@@ -586,7 +586,7 @@ border:0;
     font-size:14px;
     color:#B3B9BE;
 }
-.sendbtn,.sendMobileBtn{
+.sendbtn{
     border:0;
     background-color:#52D54E;
     color:white !important;;
@@ -605,7 +605,7 @@ border:0;
 .showVideoText{
     margin-top:85px;
 }
-.sendMobileBtn:hover{
+.sendBtn:hover{
     background-color: #3FA53C;
 }
 .Bigoverlay{
@@ -629,9 +629,7 @@ border:0;
     display: none;
 }
 @media (min-width: 320px) and (max-width: 767px){
-    nav.nav-pills{
-        height:100vh;
-    }
+ 
     .nav-item:last-child{
         border-bottom: 0;
     }
