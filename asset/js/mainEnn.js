@@ -1,5 +1,8 @@
 $(document).ready(function () { 
 
+    $(".Bigoverlay").click(function() {
+        $(this).css("display","none");
+      });
 $(" .sideVideo .close ").click(function() {    
     $(this).parent().css("display","none");
     $(".Bigoverlay").css("display","none");
