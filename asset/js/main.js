@@ -118,15 +118,15 @@ $(window).scrollTop(0);
     $(window).scroll(function (e) {
         scrollTop = $(window).offset().top;
 
-        if(scrollTop>=$("#projSection").position().top){
+        if(scrollTop>=$("#projSection").offset().top){
             $('.nav-link').removeClass('activeLink');
             $(".projectProp").addClass('activeLink');
         }
-        else if(scrollTop==$("#ourServices").position().top){
+        else if(scrollTop==$("#ourServices").offset().top){
             $('.nav-link').removeClass('activeLink');
             $(".ourServicesLink").addClass('activeLink');
         }
-        else if(scrollTop==$("#faciltiisSection").position().top){
+        else if(scrollTop==$("#faciltiisSection").offset().top){
             $('.nav-link').removeClass('activeLink');
             $(".faciltiis").addClass('activeLink');
         }
