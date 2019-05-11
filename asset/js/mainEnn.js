@@ -18,7 +18,6 @@ $(" .collapse .close ").click(function() {
 $(window).scrollTop(0);
 
     $('form').validate();
-    $('#mobileContactForm').validate();
 
 
 	  sideVideo=false;
@@ -45,7 +44,6 @@ $(window).scrollTop(0);
     $("body").children().not('.sideVideo').not('.sideMenu').not('.nationalBar').click(function(){
         var leg=$('.youtube').attr("src");
         $('.youtube').attr("src",leg);
-        $('.mobileContact').css('display','none');
       $(".sideVideo").animate({left:-735,}, 400, function() {});
               $('.sideMenu .national').removeClass('active');
 
@@ -112,7 +110,9 @@ $(window).scrollTop(0);
     });
     $(".contactus").click(function(){
         $(".mobileContact").css("display","block");
-		$('.mobileContact form').removeAttr('novalidate');
+        $('.mobileContact form').removeAttr('novalidate');
+        $(".mobileContact form").validate();
+
     });
 
     $(".navBtn").click(function() {
