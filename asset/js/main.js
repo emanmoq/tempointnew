@@ -208,8 +208,21 @@ $(window).scrollTop(0);
           }
       }
   })
-
-    
+  
+  $('.mainSlider').owlCarousel({
+    loop:true,
+    autoplay:false,
+    margin:20,
+    rtl:true,
+    dots:true,
+ 
+    responsive:{
+        0:{
+            items:1
+        },
+    }
+})
+  
          
 
 });

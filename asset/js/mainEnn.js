@@ -202,8 +202,20 @@ $(window).scrollTop(0);
           items:4,
           }
       }
-  })
-
+  });
+  $('.mainSlider').owlCarousel({
+    loop:true,
+    autoplay:false,
+    margin:20,
+    dots:true,
+ 
+    responsive:{
+        0:{
+            items:1
+        },
+    }
+})
+  
     
          
 
