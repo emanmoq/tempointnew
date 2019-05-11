@@ -1,6 +1,11 @@
 $(document).ready(function () { 
-    $(".Bigoverlay").click(function() {
+    sideVideo=false;
+
+    $(".Bigoverlay").click(function(e) {
+        e.preventDefault();
+
         $(this).css("display","none");
+        return sideVideo=0;
       });
 $(" .mobileContact .close ").click(function() {    
     $(this).parent().css("display","none");
@@ -16,7 +21,6 @@ $(window).scrollTop(0);
 
     $('form').validate();
    
-	  sideVideo=false;
 
       $(".sideMenu .national").click(function(e) {
         
@@ -41,12 +45,14 @@ $(window).scrollTop(0);
       });
 
 
-      $("body").children().not('.sideVideo').not('.sideMenu').not('.nationalBar').click(function(){
+      $("body").children().not('.sideVideo').not('.sideMenu').not('.nationalBar').click(function(e){
 			var leg=$('.youtube').attr("src");
             $('.youtube').attr("src",leg);
           $(".sideVideo").animate({right:-735,}, 100, function() {});
                   $('.sideMenu .national').removeClass('active');
-$("Bigoverlay").css("display","none")
+$("Bigoverlay").css("display","none");
+return sideVideo=0;
+
       });
 
 
