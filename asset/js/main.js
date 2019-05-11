@@ -1,5 +1,5 @@
 $(document).ready(function () { 
-
+    $("mobileContact").validate();
 
 $(" .sideVideo .close ").click(function() {    
     $(this).parent().css("display","none");
@@ -19,7 +19,7 @@ $(" .collapse .close ").click(function() {
 $(window).scrollTop(0);
 
     $('form').validate();
-    $('#mobileContactForm').validate();
+   
 
 
 	  sideVideo=false;
