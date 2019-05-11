@@ -20,13 +20,14 @@ $(window).scrollTop(0);
 
       $(".sideMenu .national").click(function(e) {
         
+          e.preventDefault();
 
 		  if(!sideVideo){
-			$(".sideVideo").animate({right:70,}, 200, function() {});
+			$(".sideVideo").animate({right:70,}, 400, function() {});
             $('.sideMenu .national').addClass('active');
             $(".Bigoverlay").css("display","block");
 		  }else{
-			$(".sideVideo").animate({right:-1000,}, 200, function() {});
+			$(".sideVideo").animate({right:-1000,}, 400, function() {});
             $('.sideMenu .national').removeClass('active');
             $(".Bigoverlay").css("display","none");
             
@@ -35,7 +36,7 @@ $(window).scrollTop(0);
 		  setTimeout(function(){
 			  sideVideo=!sideVideo
 			  
-          },200);
+          },400);
          
       });
 
@@ -141,16 +142,9 @@ $("Bigoverlay").css("display","none")
         else if(scrollTop>=$("#ourServices").offset().top){
             $('.nav-link').removeClass('activeLink');
             $(".ourServicesLink").addClass('activeLink');
-        }
-     
-    
-    
-    
-        
-        
+        }  
     });
-  
-    
+
     $(".contactus").click(function(){
         $(".mobileContact").css("display","block");
         $('.mobileContact form').removeAttr('novalidate');
@@ -232,24 +226,28 @@ $("Bigoverlay").css("display","none")
     $(".Bigoverlay").css("display","none");
 
     $('.flat-space').addClass('flat-space-carousel owl-carousel');
-    $(" .sideVideo .close ").click(function(e) {
+    $(" .sideVideo .close ").click(function(e) {    
         $(this).parent().animate({top:-1000,}, 200, function() {});
         $(".Bigoverlay").css("display","none");
+        return sideVideo=false;
     
     });
-    $(".Bigoverlay").click(function(e) {    
+    $("body .Bigoverlay").click(function() {    
         $(".collapse.navbar-collapse").css("display","none");
         $(".Bigoverlay").css("display","none");
-
 
     });
     
 }
 else{
-    $(" .sideVideo .close ").click(function(e) {  
+    $(" .sideVideo .close").click(function(e) {  
+
         $(this).parent().animate({right:-1000,}, 200, function() {});
         $(".Bigoverlay").css("display","none");
         $('.sideMenu .national').removeClass('active');
+         return sideVideo=false;
+        
+
     
     })
 }

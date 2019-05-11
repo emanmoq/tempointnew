@@ -3,11 +3,6 @@ $(document).ready(function () {
     $(".Bigoverlay").click(function() {
         $(this).css("display","none");
       });
-$(" .sideVideo .close ").click(function() {    
-    $(this).parent().css("display","none");
-    $(".Bigoverlay").css("display","none");
-
-});
 $(" .mobileContact .close ").click(function() {    
     $(this).parent().css("display","none");
     $(".Bigoverlay").css("display","none");
@@ -223,13 +218,21 @@ $(window).scrollTop(0);
             $(" .sideVideo .close ").click(function() {    
                 $(this).parent().animate({top:-1000,}, 200, function() {});
                 $(".Bigoverlay").css("display","none");
+                sideVideo=false;
             
+            });
+            $(".Bigoverlay").click(function() {    
+                $(".collapse.navbar-collapse").css("display","none");
+                $(".Bigoverlay").css("display","none");
+        
+        
             });
         }
         else{
             $(" .sideVideo .close ").click(function() {    
                 $(this).parent().animate({right:-1000,}, 200, function() {});
                 $(".Bigoverlay").css("display","none");
+                sideVideo=false;
             
             })
         }
