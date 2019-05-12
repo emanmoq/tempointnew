@@ -1,12 +1,14 @@
 $(document).ready(function () { 
     sideVideo=false;
+    sideTabo=false;
 
-    $(".Bigoverlay").click(function(e) {
-        e.preventDefault();
 
-        $(this).css("display","none");
-        return sideVideo=0;
-      });
+    $(".Bigoverlay").click(function() {
+        sideTabo=false;  
+        sideVideo=false;
+     $(this).css("display","none");
+    });
+
 $(" .mobileContact .close ").click(function() {    
     $(this).parent().css("display","none");
     $(".Bigoverlay").css("display","none");
@@ -43,20 +45,43 @@ $(window).scrollTop(0);
           },400);
          
       });
+     $(".sideMenu .tabo").click(function(e) {
+        
+          e.preventDefault();
 
+		  if(!sideTabo){
+			$(".sideTabo").animate({right:70,}, 400, function() {});
+            $('.sideMenu .tabo').addClass('active');
+            $(".Bigoverlay").css("display","block");
+		  }else{
+			$(".sideTabo").animate({right:-1000,}, 400, function() {});
+            $('.sideMenu .tabo').removeClass('active');
+            $(".Bigoverlay").css("display","none");
+            
+		  }
+          
+		  setTimeout(function(){
+            sideTabo=!sideTabo
+			  
+          },400);
+         
+      });
 
-      $("body").children().not('.sideVideo').not('.sideMenu').not('.nationalBar').click(function(e){
+      $("body").children().not('.sideVideo').not('.sideMenu').not('.nationalBar').not(".sideTabo").click(function(){
 			var leg=$('.youtube').attr("src");
             $('.youtube').attr("src",leg);
           $(".sideVideo").animate({right:-735,}, 100, function() {});
+          $(".sideTabo").animate({right:-735,}, 100, function() {});
+
+          $('.sideMenu .tabo').removeClass('active');
+
                   $('.sideMenu .national').removeClass('active');
+
 $("Bigoverlay").css("display","none");
-return sideVideo=0;
+sideVideo=false;
+sideTabo=false;
 
       });
-
-
-      
 
     $('.sliderSec-carousel').owlCarousel({
         loop:true,
@@ -90,7 +115,20 @@ return sideVideo=0;
           },200);
           
       });
-      
+      $(".nationalBar .tabo").click(function() {
+        if(sideTabo){
+
+          $(".sideTabo").animate({top:-1000,}, 200, function() {});
+          
+        }else{
+              $(".sideTabo").animate({top:94,}, 200, function() {});
+        }
+        setTimeout(function(){
+            sideTabo=!sideTabo
+            
+        },200);
+        
+    });
     scrollShow = false;
     $(window).scroll(function () {
         scrollTop = $(window).scrollTop();
@@ -232,10 +270,19 @@ return sideVideo=0;
     $(".Bigoverlay").css("display","none");
 
     $('.flat-space').addClass('flat-space-carousel owl-carousel');
-    $(" .sideVideo .close ").click(function(e) {    
+    $(" .sideVideo .close ").click(function() {    
         $(this).parent().animate({top:-1000,}, 200, function() {});
         $(".Bigoverlay").css("display","none");
-        return sideVideo=false;
+        $('.sideMenu .national').removeClass('active');
+
+        sideVideo=false;
+    
+    });
+    $(" .sideTabo .close ").click(function() {    
+        $(this).parent().animate({top:-1000,}, 200, function() {});
+        $(".Bigoverlay").css("display","none");
+        $('.sideMenu .tabo').removeClass('active');
+         sideTabo=false;
     
     });
     $("body .Bigoverlay").click(function() {    
@@ -246,16 +293,26 @@ return sideVideo=0;
     
 }
 else{
-    $(" .sideVideo .close").click(function(e) {  
+    $(" .sideVideo .close").click(function() {  
 
         $(this).parent().animate({right:-1000,}, 200, function() {});
         $(".Bigoverlay").css("display","none");
         $('.sideMenu .national').removeClass('active');
-         return sideVideo=false;
+         sideVideo=false;
         
 
     
-    })
+    });
+    $(" .sideTabo .close").click(function() {  
+
+        $(this).parent().animate({right:-1000,}, 200, function() {});
+        $(".Bigoverlay").css("display","none");
+        $('.sideMenu .tabo').removeClass('active');
+         sideTabo=false;
+        
+
+    
+    });
 }
 
   

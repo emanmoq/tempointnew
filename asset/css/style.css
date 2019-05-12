@@ -211,7 +211,7 @@ text-decoration: none;
     padding: 0;
     text-align: center;
 }
-.sideVideo{
+.sideVideo,.sideTabo{
     background-color: white;
     width:735px;
         height: 100vh;
@@ -221,9 +221,12 @@ text-decoration: none;
     position: fixed;
 z-index: 5;
 box-shadow: rgba(0, 0, 0, 0.03) 0px 3px 6px 3px;
-
- 
-
+}
+.taboImg{
+    width:300px;
+    height:200px;
+    margin-bottom:200px;
+    
 }
 
 ::-webkit-scrollbar-thumb {
@@ -307,8 +310,8 @@ box-shadow: rgba(0, 0, 0, 0.03) 0px 3px 6px 3px;
     border:0;
 }
 .advIcon{
-    width:30px;
-    height:35px;
+    width:52px;
+    height:52px;
     display: inline-block;
 }
 .advDesc{
@@ -662,7 +665,7 @@ width:100%;
 	width:100%;
 }
 
-.sideVideo{
+.sideVideo,.sideTabo{
 	padding:0;
 }
 
@@ -854,7 +857,7 @@ position:fixed;
     width:24px;
     height: 20px;
 }
-.sideVideo{
+.sideVideo,.sideTabo{
     width:100%;
     top:-1000px;
     right:0 !important;
@@ -862,7 +865,7 @@ position:fixed;
     padding-top:50px;
     padding-bottom:50px;
 }
-.sideVideo video{
+.sideVideo video,.sideTabo video{
     width:80%;
 }
 .heroSection video{

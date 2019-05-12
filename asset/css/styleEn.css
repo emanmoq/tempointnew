@@ -209,7 +209,7 @@ text-decoration: none;
     padding: 0;
     text-align: center;
 }
-.sideVideo{
+.sideVideo,.sideTabo{
     background-color: white;
     width:735px;
         height: 100vh;
@@ -305,8 +305,8 @@ box-shadow: rgba(0, 0, 0, 0.03) 0px 3px 6px 3px;
     border:0;
 }
 .advIcon{
-    width:30px;
-    height:35px;
+    width:52px;
+    height:52px;
     display: inline-block;
 }
 .advDesc{
