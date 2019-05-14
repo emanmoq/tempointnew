@@ -1,24 +1,17 @@
 $(document).ready(function () { 
     sideVideo=false;
     sideTabo=false;
+    $('form').validate();
 
 
-    $(".Bigoverlay").click(function() {
-        sideTabo=false;  
-        sideVideo=false;
+    $(".overlay").click(function() {
+        $(".mobileContact").css("display","none");
      $(this).css("display","none");
     });
 
-$(" .mobileContact .close ").click(function() {    
-    $(this).parent().css("display","none");
-    $(".Bigoverlay").css("display","none");
 
-});
-$(" .collapse .close ").click(function() {    
-    $(this).parent().parent().css("display","none");
-    $(".Bigoverlay").css("display","none");
 
-});
+
 $(window).scrollTop(0);
 
     $('form').validate();
@@ -44,31 +37,48 @@ $(window).scrollTop(0);
     $(window).scroll(function () {
         scrollTop = $(window).scrollTop();
 
-		if(scrollTop < (($('.stepsSection').offset().top-$('.MoveImg').height()-40))){
 
-        $('.navbar').addClass('scrollNav');
-            $('.MoveImg').removeClass('scrollImg');
-            $('.MoveImg').css('top',($('.stepsSection').offset().top-$('.MoveImg').height()-40));
+
+
+    if(scrollTop > $('.stepsSection').offset().top && scrollTop < $('.nationatSteps').offset().top-$('.MoveImg').height()){
+
+            $('.MoveImg').addClass('scrollImg');
+            $('.MoveImg').removeClass('scrollImg_bottom');
+
+            // $('.MoveImg').css('top',($('.stepsSection').offset().top-$('.MoveImg').height()-40));
 
 		}
-        else if (scrollTop > $('.nationatSteps').offset().top) {
-            $('.navbar').addClass('scrollNav');
-            $('.MoveImg').addClass('scrollImg');
-            $('.MoveImg').css('top','');
-
-            
+        else if( scrollTop > $('.nationatSteps').offset().top-$('.MoveImg').height()) {
+            // $('.navbar').addClass('scrollNav');
+            $('.MoveImg').removeClass('scrollImg');
+            $('.MoveImg').addClass('scrollImg_bottom');
+            // $('.MoveImg').css('top','');            
             }
         else{
-            $('.navbar').removeClass('scrollNav');
             $('.MoveImg').removeClass('scrollImg');
-            $('.MoveImg').css('top','');
-
-          
+            $('.MoveImg').removeClass('scrollImg_bottom');
         }
-        
+       
+
+
+
+    if(scrollTop > $('.nationatSteps').offset().top && scrollTop < $('.OurProjects').offset().top-$('.secMoveImg').height()){
+
+            $('.secMoveImg').addClass('scrollImg');
+            $('.secMoveImg').removeClass('scrollImg_bottom');
+
+        }
+        else if( scrollTop > $('.OurProjects').offset().top-$('.secMoveImg').height()) {
+            $('.secMoveImg').removeClass('scrollImg');
+            $('.secMoveImg').addClass('scrollImg_bottom');
+            }
+        else{
+            $('.secMoveImg').removeClass('scrollImg');
+            $('.secMoveImg').removeClass('scrollImg_bottom');
+        }
+
+ 
     });
-
-
     $(".navBtn").click(function() {
         $(".collapse.navbar-collapse").css("display","block");
         $(".Bigoverlay").css("display","block");
@@ -107,38 +117,102 @@ $(window).scrollTop(0);
             $('.stepNum').removeClass('activestepNum');
             $("#step7 .stepNum").addClass('activestepNum');
         }
+        if(scrollTop>=$(".stepsSection").offset().top & scrollTop < $(".nationatSteps").offset().top){
+            $('.nav-link').removeClass('activeLink');
+            $(".StepsLink").addClass('activeLink');
+        }
+        else if(scrollTop>=$(".nationatSteps").offset().top & scrollTop < $(".OurProjects").offset().top){
+            $('.nav-link').removeClass('activeLink');
+            $(".nationalLink").addClass('activeLink');
+        }
+        else if (scrollTop>=$(".OurProjects").offset().top){
+            $('.nav-link').removeClass('activeLink');
+            $(".ProjectsLink").addClass('activeLink');
+        }
+
+
     });
+       
+    $(".StepsLink").click(function() { 
+	
+        $('.nav-link').removeClass('activeLink');
+        $(this).addClass('activeLink');
+        
+            $('html, body').animate({
+                scrollTop: $("#stepsSec").offset().top
+            }, 1000);
+        });
+        $(".nationalLink").click(function() { 
+	
+            $('.nav-link').removeClass('activeLink');
+            $(this).addClass('activeLink');
+            
+                $('html, body').animate({
+                    scrollTop: $("#nationatSteps").offset().top
+                }, 1000);
+            });
+            $(".ProjectsLink").click(function() { 
+	
+                $('.nav-link').removeClass('activeLink');
+                $(this).addClass('activeLink');
+                
+                    $('html, body').animate({
+                        scrollTop: $("#OurProjects").offset().top
+                    }, 1000);
+                });
+        
+    
   
-      
-  $('.flat-space-carousel').owlCarousel({
+                if($('body').width()<500){  
+                    $('.Stepsec').addClass('stepsCarusel owl-carousel');
+                    $('.stepNum').removeClass('activestepNum');
+                    $('.nav').addClass('navCarusel owl-carousel');  
+                }
+                $(".contactsec").click(function(){
+                    $(".mobileContact").css("display","block");
+                    $('.mobileContact form').removeAttr('novalidate');
+                    $(".mobileContact form").validate();
+                    $(".overlay").css("display","block");
+
+            
+                });
+                $(" .mobileContact .closeform ").click(function() {    
+                    $(this).parent().css("display","none");
+                    $(".overlay").css("display","none");
+            
+                });
+  $('.navCarusel').owlCarousel({
       loop:true,
       autoplay:false,
-      margin:20,
+      margin:0,
       rtl:true,
-   
+      nav:false,
+      dots:false,
       responsive:{
           0:{
-              items:3
+              items:1.5
           },
           600:{
           items:4,
           }
       }
   })
-  
-  $('.mainSlider').owlCarousel({
+  $('.stepsCarusel').owlCarousel({
     loop:true,
     autoplay:false,
     margin:20,
     rtl:true,
-    dots:true,
- 
     responsive:{
         0:{
             items:1
         },
+        600:{
+        items:4,
+        }
     }
-});
+})
+
+
 $('.projectSlider').owlCarousel({
     loop:true,
     autoplay:false,

@@ -17,71 +17,58 @@
         <link rel="stylesheet" href="asset/css/owl.carousel.min.css" type="text/css">
         <link rel="stylesheet" href="asset/css/owl.carousel.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" href="asset/css/style.css" type="text/css">
 
         <link rel="stylesheet" href="asset/css/style.css" type="text/css">
+        <link rel="stylesheet" href="asset/css/lightbox.css" type="text/css">
+
 
         <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 </head>
 
 <body>
-        <div class="Bigoverlay">
+                <div class="overlay"></div>
 
-        </div>
+                <div class="langugeHeader d-block d-lg-none ">
+                                <div class="mobilelanguge languge clearfix">
+                                                <a href="index.html" class="float-right activeLink">العربية</a>
+                                                <a href="index2.html"  class="  float-left">English</a>
+
+                                        </div>
+
+                </div>
         <!--headerNav section start-->
         <div class="headerNav">
+   
                 <nav class="navbar clearfix fixed-top navbar-expand-lg bg-white scrolling-navbar top-nav-collapse">
                         <div class="logo">
                                 <img src="asset/img/logo.png">
                         </div>
-                        <div class="navBtn">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="20px" height="19px">
-                                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
-                                                d="M18.942,10.999 L9.059,10.999 C8.475,10.999 8.000,10.552 8.000,9.999 C8.000,9.446 8.475,8.999 9.059,8.999 L18.942,8.999 C19.527,8.999 20.001,9.446 20.001,9.999 C20.001,10.552 19.527,10.999 18.942,10.999 ZM18.236,1.999 L1.765,1.999 C0.791,1.999 0.001,1.551 0.001,0.999 C0.001,0.447 0.791,-0.001 1.765,-0.001 L18.236,-0.001 C19.210,-0.001 20.001,0.447 20.001,0.999 C20.001,1.551 19.210,1.999 18.236,1.999 ZM4.500,16.999 L18.500,16.999 C19.329,16.999 20.001,17.447 20.001,17.999 C20.001,18.551 19.329,18.999 18.500,18.999 L4.500,18.999 C3.672,18.999 3.001,18.551 3.001,17.999 C3.001,17.447 3.672,16.999 4.500,16.999 Z">
-                                        </path>
-                                </svg>
+                        <div class="mobileSocialIcons SocialIcons">
+                                        <a href="twitter"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="facebook"><i class="fab fa-twitter"></i></a>
 
 
-                        </div>
-
-
+                                </div>
                         <div class="collapse navbar-collapse justify-content-center text-center"
                                 id="navbarSupportedContent">
 
                                 <ul class="nav nav-pills">
 
                                         <li class="nav-item ">
-                                                <a class="nav-link faciltiis " href="#"> الخطوات التنفيذية</a>
+                                                <a class="nav-link StepsLink " href="#stepsSec"> الخطوات التنفيذية</a>
                                         </li>
 
-                                        <div class="close"><i class="fas fa-times"></i></div>
 
                                         <li class="nav-item ">
-                                                <a class="nav-link  projectProp" href="#">الجنسية التركية </a>
-                                        </li>
-                                        <li class="nav-item ">
-                                                <a class="nav-link  flatlink" href="#">مشاريع مطابقة لقرار الجنسية
+                                                <a class="nav-link  nationalLink" href="#nationatSteps">الجنسية التركية
                                                 </a>
                                         </li>
                                         <li class="nav-item ">
-                                                <div class="mobileSocialIcons SocialIcons">
-                                                        <span>قم بمتابعتنا على السوشال ميديا</span>
-                                                        <a href="twitter"><i class="fab fa-facebook-f"></i></a>
-                                                        <a href="facebook"><i class="fab fa-twitter"></i></a>
-                                                        <a href="facebook"><i class="fab fa-instagram"></i></a>
-
-
-                                                </div>
+                                                <a class="nav-link  ProjectsLink" href="#OurProjects">مشاريع مطابقة
+                                                        لقرار الجنسية
+                                                </a>
                                         </li>
-                                        <li class="nav-item langugeLink ">
-                                                <div class="mobilelanguge languge">
-                                                        <a href="index.html" class=" ararbic activeLink">العربية</a>
-                                                        <a href="index2.html">English</a>
-
-                                                </div>
-                                        </li>
-
-
 
                                 </ul>
 
@@ -101,32 +88,6 @@
         </div>
 
 
-        <div class="contactForm text-center">
-
-                <div class="contactLogo">
-                        <img src="asset/img/logo2.png">
-                </div>
-                <span class="contactNow">تواصل معنا فورا</span>
-                <span>للمزيد من المعلومات أو الحجز</span>
-                <form>
-                        <div class='form-group'>
-                                <input type="text" name='name' required class="formControl" placeholder="الاسم">
-                        </div>
-                        <div class='form-group'>
-
-                                <input type="email" name='email' required class="formControl" placeholder="الايميل">
-                        </div>
-                        <div class='form-group'>
-
-                                <input type="text" name='country' required class="formControl" placeholder="البلد">
-                        </div>
-                        <button type='submit' class="btn btn-primary sendbtn">إرسال</button>
-
-                </form>
-
-
-        </div>
-
 
 
         <!--Hero Section-->
@@ -136,10 +97,17 @@
                                 <div class="col-12">
                                         <div class="hero-carusel owl-carousel">
                                                 <div class="caruselItem">
+                                                        <div class="NationalSide">
+                                                                <h6>الجنسية التركية </h6>
+                                                                <h6>بالتفصيل</h6>
+
+                                                        </div>
+                                                        <a href="asset/Tempoint.mp4"
+                                                                class="html5lightbox showVideoIcon">
+                                                                <i class="fas fa-play"></i>
+                                                        </a>
                                                         <video id="myVideo">
-                                                                <div class="showVideoIcon">
-                                                                        <i class="fas fa-play"></i>
-                                                                </div>
+
                                                                 <source src="asset/Tempoint.mp4" type="video/mp4">
 
                                                         </video>
@@ -156,8 +124,8 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                         <div class="lowCont clearfix">
                                                 <div class="lowdesc float-right">
-                                                        <h4>قانون منح الجنسية</h4>
-                                                        <p>
+                                                        <h4 class="lowTitle1">"قانون منح الجنسية</h4>
+                                                        <p >
                                                                 تعديل قانون منح الجنسية التركية بشكل إستثنائي للمستثمرين
                                                                 الأجانب عن طريق تملك عقار على الأقل في تركيا بقيمة
                                                                 250000$ كحد أدنى
@@ -222,13 +190,16 @@
                         </div>
                 </div>
         </div>
-        <div class="stepsSection">
-                <div class="MoveImg">
+        <div class="stepsSection" id="stepsSec">
+                <div class="MoveImg d-none d-lg-block">
                         <img src="asset/img/step1.png">
                 </div>
                 <div class="container-fluid">
                         <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="mobileStepImg d-block d-lg-none">
+                                                                <img src="asset/img/step1.png">
+                                                        </div>
                                         <h4 class="sectionTitle">الخطوات التنفيذية </h4>
                                         <span class="projSpan">الخطوات التنفيذية لهذا القرار بعد تحديد العقار أو
                                                 العقارات والتي تجاوزت قيمتها 250,000 دولار</span>
@@ -276,7 +247,8 @@
 
                                                         </div>
                                                         <div class="stepNumDesc clearfix">
-                                                                <div class="stepNum float-right">1</div>
+                                                                <div class="stepNum float-right">1 </div>
+                                                                <hr>
                                                                 <div class="stepDesc float-left">
                                                                         <h5 class="stepTitle"> تقييم العقار</h5>
 
@@ -476,13 +448,16 @@
                         </div>
                 </div>
         </div>
-        <div class="nationatSteps">
-                <div class="secMoveImg">
+        <div class="nationatSteps" id="nationatSteps">
+                <div class="secMoveImg d-none d-lg-block d-md-block">
                         <img src="asset/img/step2.png">
                 </div>
                 <div class="container-fluid">
                         <div class="row ">
                                 <div class="col-lg-6 col-12">
+                                                <div class="mobileStepImg d-block d-lg-none d-md-none">
+                                                                <img src="asset/img/step2.png">
+                                                        </div>
                                 </div>
 
                                 <div class="col-lg-6 col-12 clearfix">
@@ -629,7 +604,8 @@
 
                                                                 </div>
                                                                 <div class="stepNumDesc clearfix">
-                                                                        <div class="stepNum  lastStepNum float-right">3</div>
+                                                                        <div class="stepNum  lastStepNum float-right">3
+                                                                        </div>
                                                                         <div class="stepDesc float-left">
                                                                                 <h5 class="stepTitle">تسجيل كامل القيمة
                                                                                         بحوالة
@@ -662,7 +638,7 @@
                         </div>
                 </div>
         </div>
-        <div class="OurProjects paddingSection bg-white" id="OurProjects">
+        <div class="OurProjects paddingSection" id="OurProjects">
 
                 <div class="container-fluid">
                         <div class="row justify-content-center">
@@ -795,51 +771,7 @@
                                 <div class="col-12 clearfix">
                                         <div class="right-footer  float-right">
                                                 <div class="footerLogo ">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="123"
-                                                                height="29" viewBox="0 0 123 29">
-                                                                <defs>
-                                                                        <path id="a" d="M.21.045h18.037v21.773H.209z">
-                                                                        </path>
-                                                                        <path id="c" d="M0 .224h17.492V18.24H0z"></path>
-                                                                        <path id="e" d="M.042.224h14.08v17.701H.041z">
-                                                                        </path>
-                                                                </defs>
-                                                                <g fill="none" fill-rule="evenodd">
-                                                                        <g transform="translate(98.795 6.935)">
-                                                                                <mask id="b" fill="#fff">
-                                                                                        <use xlink:href="#a"></use>
-                                                                                </mask>
-                                                                                <path fill="#E32669"
-                                                                                        d="M9.228 13.638a4.575 4.575 0 1 1 0-9.149 4.575 4.575 0 0 1 0 9.15m0-13.594a9.019 9.019 0 0 0-6.335 15.436l.003.006 6.332 6.331 6.332-6.331.002-.005A9.018 9.018 0 0 0 9.228.046"
-                                                                                        mask="url(#b)"></path>
-                                                                        </g>
-                                                                        <g transform="translate(93 .117)">
-                                                                                <mask id="d" fill="#fff">
-                                                                                        <use xlink:href="#c"></use>
-                                                                                </mask>
-                                                                                <path fill="#A6CA26"
-                                                                                        d="M12.415 6.186a10.02 10.02 0 0 1 5.077-.037A9.022 9.022 0 0 0 9.018.224 9.018 9.018 0 0 0 2.684 15.66l.003.005L5.26 18.24a10.122 10.122 0 0 1-.278-2.357c0-1.255.234-2.456.656-3.565a4.552 4.552 0 0 1-1.194-3.074 4.575 4.575 0 0 1 4.575-4.575c1.35 0 2.559.588 3.396 1.518"
-                                                                                        mask="url(#d)"></path>
-                                                                        </g>
-                                                                        <g transform="translate(108.682 .117)">
-                                                                                <mask id="f" fill="#fff">
-                                                                                        <use xlink:href="#e"></use>
-                                                                                </mask>
-                                                                                <path fill="#4EBCD5"
-                                                                                        d="M5.103.224a8.966 8.966 0 0 0-5.061 1.56 10 10 0 0 1 2.572 3.631 4.529 4.529 0 0 1 2.489-.747 4.575 4.575 0 0 1 3.549 7.459c.47 1.16.73 2.428.73 3.755 0 .695-.071 1.378-.208 2.043l2.26-2.26.003-.004A9.018 9.018 0 0 0 5.103.225"
-                                                                                        mask="url(#f)"></path>
-                                                                        </g>
-                                                                        <g fill-rule="nonzero">
-                                                                                <path fill="#FFF"
-                                                                                        d="M77.819 9.54h-1.49V8h1.49v1.54zm-2.476 0h-1.49V8h1.49v1.54zm2.456 6.32c0 1.6-.966 2.6-2.738 2.6h-2.234v-1.28h2.214c.785 0 1.369-.46 1.369-1.36 0 .18-.02-1.36-.06-4.66h1.388l.06 4.7zm-4.53 2.6h-1.79c-.605 0-1.108-.26-1.53-.76a2.533 2.533 0 0 1-.504-.86c-.382.98-1.409 1.56-2.516 1.62h-2.637v-1.28h2.234c.383 0 .725-.1 1.047-.3.423-.28.624-.64.624-1.1.04.32.04-1.22-.02-4.62h1.389c0 1.28.02 2.54.04 3.8.02.7.222 1.26.624 1.68.342.36.725.54 1.107.54h1.933v1.28zm-2.254 2.96h-1.49v-1.54h1.49v1.54zm-2.456 0h-1.51v-1.54h1.51v1.54zm-3.401-2.96c-1.691 0-2.899-.58-3.644-1.74-.543 1.16-1.51 1.74-2.918 1.74-1.087 0-1.953-.4-2.617-1.18-.604-.76-.906-1.68-.886-2.76h-1.288c-.825 0-1.228.56-1.208 1.66l.08 6.6H51.27l-.101-6.92c-.02-1.74.866-2.62 2.637-2.62h.624c.342.02.624.02.886.02.442-1.52 1.49-2.28 3.14-2.28.906 0 1.67.28 2.294.86.584.54.946 1.2 1.087 2 .182 1.18.504 2.02.967 2.52.503.54 1.288.82 2.355.82v1.28zm-4.65-3.74c0-.84-.222-1.5-.644-1.98-.383-.42-.846-.64-1.39-.64-.543 0-1.006.22-1.348.64-.382.46-.563 1.12-.563 1.98 0 .82.221 1.48.644 1.98.382.42.845.64 1.389.64.563 0 1.026-.22 1.368-.64.363-.46.544-1.12.544-1.98z">
-                                                                                </path>
-                                                                                <path fill="#FFF"
-                                                                                        d="M44.062 15.824c0 .15-.02-1.392-.06-4.664h1.389l.06 4.7c0 1.6-.966 2.6-2.737 2.6h-2.235v-1.28h2.215c.784 0 1.367-.459 1.368-1.356zm.202 5.576h-1.49v-1.54h1.49v1.54zm-3.261-2.94h-3.06c-.624 2.48-2.456 4.12-5.012 4.34-.12-.26-.322-.66-.584-1.24 1.007 0 1.892-.28 2.637-.86a4.586 4.586 0 0 0 1.53-2.24h-1.812c-.925 0-1.67-.34-2.254-1.04-.584-.7-.825-1.56-.825-2.54.02-1.3.463-2.28 1.248-2.96.624-.54 1.348-.8 2.154-.8 2.093 0 3.14 1.06 3.14 3.16v2.9h2.838v1.28zm-4.227-1.28v-3.34c0-1.18-.584-1.78-1.61-1.78-.544 0-.987.22-1.37.68-.422.5-.664 1.18-.664 2.04 0 1.34.745 2.4 1.933 2.4h1.71zm-7.79-1.32c0 1.6-.966 2.6-2.738 2.6h-2.637v-1.28h2.617c.785 0 1.369-.46 1.369-1.36 0 .18-.02-1.36-.06-4.66h1.388l.06 4.7zm-.765 5.56h-1.49v-1.54h1.49v1.54zm-2.476 0h-1.49v-1.54h1.49v1.54zM20.753 9.56h-1.51V8.02h1.51v1.54zm3.704 8.9h-1.792c-.604 0-1.107-.26-1.53-.76a2.533 2.533 0 0 1-.503-.86c-.382.98-1.409 1.56-2.516 1.62H15.48v-1.28h2.255c.382 0 .724-.1 1.046-.3.403-.28.604-.64.604-1.1.04.32.04-1.22-.02-4.62h1.389c0 1.28.02 2.54.04 3.8.02.7.222 1.26.624 1.68.342.36.725.54 1.107.54h1.933v1.28zm-16.204-7.3h-1.49V9.62h1.49v1.54zm-2.456 0h-1.51V9.62h1.51v1.54zm10.528 7.3h-1.792c-.886 0-1.55-.48-1.972-1.44-.222.96-.806 1.44-1.752 1.44H4.65c-1.55 0-2.717-.62-3.502-1.86C.483 15.58.121 14.24.06 12.58L0 11.4h1.188l.06 1.18c.06 1.76.543 3.04 1.409 3.82.584.52 1.248.78 1.993.78h5.817c.544 0 .805-.38.805-1.12 0-.44-.02-2.08-.08-4.9h1.389l.08 3.8c.02.7.222 1.26.624 1.68.342.36.705.54 1.107.54h1.933v1.28z">
-                                                                                </path>
-                                                                        </g>
-                                                                </g>
-                                                        </svg>
+                                                   <img src="asset/img/logo.png">
                                                 </div>
                                         </div>
                                         <div class="float-left ">
@@ -863,10 +795,9 @@
         </div>
 
         <div class="contactForm mobileContact text-center">
-                <div class="close"><i class="fas fa-times"></i></div>
-
+                <div class="closeform"><i class="fas fa-times"></i></div>
                 <div class="contactLogo">
-                        <img src="asset/img/logo2.png">
+                        <img src="asset/img/logo.png">
                 </div>
                 <span class="contactNow">تواصل معنا فورا</span>
                 <span>للمزيد من المعلومات أو الحجز</span>
@@ -888,9 +819,15 @@
 
 
         </div>
-        <div class="contactus">
-                <span class="contactLink"><a href="##">تواصل معنا فوراً</a></span>
+        <div class="contactus clearfix">
+                <div class="ask float-right">
+                           <span class="contactLink"><a href="##">  استشرنا الآن  </a></span>
+                
+                </div>
+                <div class="contactsec float-left">
+                                <span class="contactLink"><a href="##">تواصل معنا </a></span>
 
+                </div>
 
         </div>
         <!--Footer-->

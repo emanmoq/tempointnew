@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="42" viewBox="0 0 90 42">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 960 450">
+      <image width="960" height="450" xlink:href="unnamed-image.png"/>
+    </pattern>
+  </defs>
+  <rect id="unnamed" width="90" height="42" fill="url(#pattern)"/>
+</svg>
