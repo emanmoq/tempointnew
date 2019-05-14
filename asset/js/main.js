@@ -130,6 +130,10 @@ $(window).scrollTop(0);
             $('.nav-link').removeClass('activeLink');
             $(".ProjectsLink").addClass('activeLink');
         }
+        else{
+            $('.nav-link').removeClass('activeLink');
+
+        }
 
 
     });
