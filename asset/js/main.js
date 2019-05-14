@@ -37,6 +37,10 @@ $(window).scrollTop(0);
     $(window).scroll(function () {
         scrollTop = $(window).scrollTop();
 
+         if( scrollTop >0){
+            $('.headerNav').addClass('scrollNav');
+
+         }
 
 
 
@@ -45,14 +49,11 @@ $(window).scrollTop(0);
             $('.MoveImg').addClass('scrollImg');
             $('.MoveImg').removeClass('scrollImg_bottom');
 
-            // $('.MoveImg').css('top',($('.stepsSection').offset().top-$('.MoveImg').height()-40));
 
 		}
         else if( scrollTop > $('.nationatSteps').offset().top-$('.MoveImg').height()) {
-            // $('.navbar').addClass('scrollNav');
-            $('.MoveImg').removeClass('scrollImg');
+          $('.MoveImg').removeClass('scrollImg');
             $('.MoveImg').addClass('scrollImg_bottom');
-            // $('.MoveImg').css('top','');            
             }
         else{
             $('.MoveImg').removeClass('scrollImg');

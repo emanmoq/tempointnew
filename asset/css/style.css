@@ -596,7 +596,9 @@ border:0;
 
 @media (min-width: 320px) and (max-width: 767px){
  
-
+    .headerNav{
+        padding:0
+    }
 .heroSection{
     height:375px;
 }
@@ -710,15 +712,10 @@ display: block !important}
 }
 .langugeHeader{
     width:100%;
-    background-color: #979797;
+    background-color: #FAFAFA;
     height: 40px;
 }
-.scrollNav{
-    top:40px !important
-}
-.mobilelanguge{
-    margin-top:11px;
-}
+
 .mobileSocialIcons{
     text-align: center;
     margin:0;
@@ -743,6 +740,7 @@ display: block !important}
     height:60px;
     z-index:9999999;
 }
+
 .heroCont{
     top:30%;
     max-width: 227px;
