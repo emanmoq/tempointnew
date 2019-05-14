@@ -12,9 +12,8 @@
 /*****************************************************/
 
 body{
-direction: rtl;
 font-family: "29lt-bukra-regular";
-text-align: right;
+text-align: left;
 position: relative;
 
 }
@@ -22,7 +21,7 @@ position: relative;
     width:100%;
     height:100%;
     top:0;
-    left:0;
+    right:0;
     background-color:rgba(0,0,0,.4);
     position:absolute;
     z-index:3;
@@ -46,7 +45,7 @@ display: none;
 .closeform i{
     font-size: 23px;
     position: absolute;
-    left: 5%;
+    right: 5%;
     top: 3%;
 color:#B3B9BE;
 }
@@ -99,7 +98,7 @@ color:#B3B9BE;
 	transition:all .5s;
     content: "";
     position: absolute;
-    right:8%;
+    left:8%;
     bottom: -10px;
     height: 1px;
     border-bottom: 3px solid #0072bb;
@@ -117,7 +116,7 @@ color:#B3B9BE;
 .languge a{
     font-size:14px;
     color:#B3B9BE;
-    padding-left:30px;
+    padding-right:30px;
     
 }
 
@@ -129,12 +128,12 @@ color:#B3B9BE;
     display: none;
 }
 .SocialIcons{
-    margin-right:50px;
+    margin-left:50px;
 }
 .SocialIcons a{
     font-size: 14px;
     color:#B3B9BE;
-    padding-left:50px;
+    padding-right:50px;
 }
 .heroSection{
     width: 100%;
@@ -155,7 +154,7 @@ position: relative;
     position: absolute;
     top:50%;
     z-index: 333;
-    right:10%;
+    left:10%;
 
 }
 .hero-carusel img{
@@ -165,10 +164,10 @@ position: relative;
     width:40%;
     height:100%;
     position: absolute;
-    right:0;
+    left:0;
     top:0;
     background-color: #292929;
-    border-left:10px solid #0072bb;
+    border-right:10px solid #0072bb;
     line-height: 50%;
     padding:50px 140px;
 
@@ -183,6 +182,7 @@ position: relative;
 .NationalText{
     position: absolute;
     top:40%;
+    left:17%;
 }
 .showVideoIcon i{
 color:#6EA316;
@@ -195,7 +195,7 @@ transition-duration: .5s;
 }
 .showVideoIcon{
     position: absolute;
-    right:49%;
+    left:49%;
 bottom:50%;
 z-index: 22;
 }
@@ -253,7 +253,7 @@ font-size:14px;
     font-size: 30px;
     font-weight: 600;
     display: block;
-    padding-left: 18px;
+    padding-right: 18px;
     margin:auto;
     margin-bottom:20px;
     font-family: "29lt-bukra-bold";
@@ -281,7 +281,7 @@ font-size:14px;
     width:100px;
     height: 100px;
     margin-bottom: 25px;
-    margin-right:50px;
+    margin-left:50px;
 }
 .stepNumTitle{ 
     display: inline-block;
@@ -290,7 +290,7 @@ font-size:14px;
     display: inline-block;
     font-size:18px;
     font-family: "29lt-bukra-bold";
-    margin-right:20px;
+    margin-left:20px;
 
 }
 .step .stepNum{
@@ -324,7 +324,7 @@ font-size:14px;
     color:#D8D8D8;
     border:1px dashed #D8D8D8;
     top: 100%;
-    right: 50%;
+    left: 50%;
 }
 .lastStepNum::before{
     display: none;
@@ -347,7 +347,7 @@ font-size:14px;
 }
 .secSecStep{
     width:50%;
-    float:left;
+    float:right;
 }
 .nationatSteps{
     padding:50px 10px;
@@ -414,23 +414,23 @@ font-weight: 400;
     top: 45% !important;
 }
 .projectSlider .owl-nav button.owl-next{
-left:10px;}
+right:10px;}
 .owl-nav button.owl-prev{
-    right:10px
+    left:10px
     }
     .projectSlider .owl-dots,.hero-carusel .owl-dots,.stepsCarusel  .owl-dots {
         position: absolute !important;
         bottom: 25px !important;
         z-index: 222 !important;
-        right:35%;
+        left:35%;
         display: block !important;
     }
     .stepsCarusel  .owl-dots{
         bottom: -25px !important;
-        right:30%;
+        left:30%;
     }
     .hero-carusel .owl-dots{
-        right:50% !important;
+        left:50% !important;
     }
     .projectSlider .owl-dot ,.hero-carusel .owl-dot,.stepsCarusel  .owl-dot{
    
@@ -502,11 +502,11 @@ display:block
 	position:relative;
 }
 .form-group input{
-	padding-right:20px;
+	padding-left:20px;
 }
 .form-group input.error{
 	border-color: red;
-    margin-right: 32px;
+    margin-left: 32px;
     width: 239px;
 }
 .form-group label.error{
@@ -516,7 +516,7 @@ position: absolute;
     color: red;
     top: 8px;
     font-size: 12px;
-    left: -130px;
+    right: -130px;
 }
 .contactus{
     width:100%;
@@ -527,7 +527,7 @@ position: absolute;
     display: none;
     position: fixed;
     bottom:0;
-    left:0;
+    right:0;
     z-index:999;
     display: none;
 }
@@ -625,7 +625,7 @@ position: relative;
 .ask{
     position: fixed;
     bottom:0;
-    right:15px;
+    left:15px;
     z-index: 4;
     width:190px;
     height:50px;
@@ -642,7 +642,7 @@ text-decoration: none;
     }
 .askus .contactForm{
     position: fixed;
-    right:15px;
+    left:15px;
     bottom:-435px
 
 }
@@ -673,10 +673,10 @@ text-decoration: none;
     display: none;
 }
 .showVideoIcon {
-    right:35%;
+    left:35%;
 }
 .showVideoIcon i{
-    right:30px;
+    left:30px;
 }
 .lowTitle{
     display: block
@@ -693,17 +693,12 @@ text-decoration: none;
     width:80px;
 margin-top:-14%;}
 .stepNum::before{display:none;}
-.stepNum hr{
-border: 1px solid dashed;
-width:100%;
-top:5%;
-right:0;
-}
+
 .nav{
     display: block;
     width:100%;
     position: absolute;
-    left:0;
+    right:0;
     top:55px;
     background: white;
     height:50px;
@@ -721,7 +716,7 @@ right:0;
     display: none;
 }
 .paddingSection{
-    padding-right: 5px;
+    padding-left: 5px;
 }
 .heroCont h1{
     font-size:22px;
@@ -752,7 +747,7 @@ display: block !important}
 }
 
 .logo{
-    float:right;
+    float:left;
     width:90px;
     height: 60px;
 }
@@ -786,32 +781,21 @@ display: block !important}
 
 }
 .ararbic{
-    border-left:1px solid #D9D9D9;
+    border-right:1px solid #D9D9D9;
 }
 .navbar {
     height:60px;
     z-index:9999999;
 }
 
-.heroCont{
-    top:30%;
-    max-width: 227px;
-    right:20%
-}
+
 .sectionTitle{
 font-size: 22px;
-text-align:right;
+text-align:left;
 }
-hr{
-    display: block;
-}
-.faciltiisSection hr{
-    width:185px;
-}
-.flatSpaceSection hr{
-    width:247px;
-}
-.footer .float-left,.footer .float-right{
+
+
+.footer .float-right,.footer .float-left{
     float: none !important;
 }
 .footer{
@@ -851,7 +835,7 @@ text-decoration: none;}
     height: 100%;
     width: 100%;
     top: 35%;
-    left: 0;
+    right: 0;
     position: fixed;
     padding: 2% 10%;
     background-color: white;
@@ -863,55 +847,8 @@ text-decoration: none;}
     .mobileContact form{
         margin-top:0
     }
-.nationalBar{
-position:fixed;
-    display:block;
-    width:100%;
-    height: 40px;
-    background-color: #F6F6F6;
-    justify-content: center;
-    border:1px solid #D9D9D9;
-    padding:4px 0;
-    z-index: 2;
-    margin-top: 5px;
-}
-.nationalBar ul li{
-    text-align: center;
-    display: inline-block;
-    padding: 3px 0px;
-    border-left: 1px solid #D9D9D9;
-    width: 33.33%;
-    float: right;
-}
-.nationalBar .sideImg{
-    display: inline-block;
-    margin-left:8px;
-}
-.nationalBar ul{
-    padding:0;
-    margin:0;
-}
-.nationalBar ul li:last-child{
-    border:0;
-}
-.sideItem span{
-    font-size: 12px;
-}
-.sideImg{
-    width:24px;
-    height: 20px;
-}
-.sideVideo,.sideTabo{
-    width:100%;
-    top:-1000px;
-    right:0 !important;
-    height: 90vh;
-    padding-top:50px;
-    padding-bottom:50px;
-}
-.sideVideo video,.sideTabo video{
-    width:80%;
-}
+
+
 .heroSection video{
 	width:auto;
 	height:100%;
@@ -926,18 +863,11 @@ position:fixed;
     display:block;
 padding-bottom:100px;
 }
-.fotorama__dot{
-    width:10px !important;
-    height:10px !important;
-    background-color:#D9D9D9;
-}
+
 .showImage{
     display:block;
 }
-.greenDiv{
-    margin:0 auto;
-    margin-bottom:20px;
-}
+
 .footer.mobileFooter{
     display:block;
 }
@@ -950,14 +880,10 @@ padding-bottom:100px;
 .mainSlider.owl-carousel{
     display:block;
 }
-.fotorama{
-    display: none;
-}
-
 
 .form-group label.error {
     top: 47px;
-    left: 5px;
+    right: 5px;
 }
 .hero-carusel .owl-dots{
     display: block !important;
@@ -1041,6 +967,7 @@ height: 402px;
         .MoveImg,.scrollImg,.scrollImg_bottom{
             width:85%
         } 
+            
             
 }
  
