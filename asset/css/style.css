@@ -527,16 +527,13 @@ position: absolute;
     display: none;
 }
 .contactForm{
-    width:310px;
-    height:400px;
+    width:318px;
+    height:435px;
     padding:30px 25px;
     background-color: #F6F6F6;
     border:1px solid #D9D9D9;
     position: absolute;
     z-index: 555;
-    left:135px;
-    top:520px;
-    display: none;
 }
 
 .scrollImg{
@@ -612,8 +609,40 @@ border:0;
 .footer{
     display:block;
 }
+.askus{
+width:100%;
+height:500px;
+position: relative;
+}
+.ask:hover{
+    background-color:#44a941;
+}
+.ask{
+    position: fixed;
+    bottom:0;
+    right:15px;
+    z-index: 4;
+    width:190px;
+    height:50px;
+    background-color:#52D54E;
+    line-height: 50px;
+    text-align: center;
+}
+.askus .contactLink a{
+    color:white !important;
+    text-align: center;}
+    .askus .contactLink a:hover{
+        color:white !important;
+text-decoration: none;    
+    }
+.askus .contactForm{
+    position: fixed;
+    right:15px;
+    bottom:-435px
 
-@media (min-width: 320px) and (max-width: 767px){
+}
+
+    @media (min-width: 320px) and (max-width: 767px){
  
     .headerNav{
         padding:0

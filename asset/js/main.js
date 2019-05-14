@@ -1,12 +1,52 @@
-$(document).ready(function () { 
-    sideVideo=false;
-    sideTabo=false;
+$(document).ready(function () {
+    askContact=false;
     $('form').validate();
 
 
     $(".overlay").click(function() {
-        $(".mobileContact").css("display","none");
+        $(".mobileContact").css("display","none"); 
+        $("ask .contactForm").animate({
+            bottom:-435,
+          }, 400, function() {
+          });
+            $(".ask").animate({
+                bottom: 0,
+              }, 400, function() {
+              });
+
      $(this).css("display","none");
+     askContact=false;
+
+    });
+
+    $(".askus").click(function() {    
+        if(!askContact){
+            $(".overlay").css("display","block");
+            $(".askus .contactForm").animate({
+                bottom:0,
+              }, 400, function() {
+              });
+            $(".ask").animate({
+                bottom: 435,
+              }, 400, function() {
+              });
+        }else{
+            $(".overlay").css("display","none");
+            $(".askus .contactForm").animate({
+                bottom:-435,
+              }, 400, function() {
+              });
+            $(".ask").animate({
+                bottom: 0,
+              }, 400, function() {
+              });
+          
+        }
+        setTimeout(function(){
+            askContact=!askContact
+            
+        },400);
+       
     });
 
 
@@ -14,7 +54,6 @@ $(document).ready(function () {
 
 $(window).scrollTop(0);
 
-    $('form').validate();
     $('.sliderSec-carousel').owlCarousel({
         autoplay:false,
         loop:false,
@@ -80,11 +119,7 @@ $(window).scrollTop(0);
 
  
     });
-    $(".navBtn").click(function() {
-        $(".collapse.navbar-collapse").css("display","block");
-        $(".Bigoverlay").css("display","block");
-      });
-
+ 
       
       $(window).scroll(function () {
         scrollTop = $(window).scrollTop()
