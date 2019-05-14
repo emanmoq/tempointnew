@@ -174,10 +174,15 @@ position: relative;
 
 }
 .NationalSide h6{
+
     font-size:30px;
     color:white;
     font-weight: 400;
     background-color: #0072bb;
+}
+.NationalText{
+    position: absolute;
+    top:40%;
 }
 .showVideoIcon i{
 color:#6EA316;
@@ -611,7 +616,7 @@ border:0;
 }
 .askus{
 width:100%;
-height:500px;
+height:auto;
 position: relative;
 }
 .ask:hover{
@@ -828,13 +833,13 @@ hr{
     color: #52D54E !important;
 
 }
-.ask{
+.askmobile{
     width:50%;
     background-color:#52D54E;
     height: 100%;
 
 }
-.ask a{
+.askmobile a{
     color: white;
 
     font-size:16px;

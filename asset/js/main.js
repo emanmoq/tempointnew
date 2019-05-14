@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     $(".overlay").click(function() {
         $(".mobileContact").css("display","none"); 
-        $("ask .contactForm").animate({
+        $(".askus .contactForm").animate({
             bottom:-435,
           }, 400, function() {
           });
