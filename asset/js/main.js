@@ -224,13 +224,13 @@ $(window).scrollTop(0);
   $('.navCarusel').owlCarousel({
       loop:true,
       autoplay:false,
-      margin:0,
+      margin:10,
       rtl:true,
       nav:false,
       dots:false,
       responsive:{
           0:{
-              items:1.5
+              items:2
           },
           600:{
           items:4,

@@ -219,6 +219,7 @@ $(window).scrollTop(0);
                 });
   $('.navCarusel').owlCarousel({
       loop:true,
+      autoWidth:false,
       autoplay:false,
       margin:0,
       nav:false,

@@ -147,7 +147,7 @@ vertical-align: middle;
 z-index: 0;
 position: relative;
 }
-.heroSection h4{
+.caruseltext{
     font-size: 18px;
     font-family: "29lt-bukra-bold";
     background-color: #B3B9BE;
@@ -646,21 +646,65 @@ text-decoration: none;
     bottom:-435px
 
 }
-
+.caruselImg{
+    width:100%;
+    height:100%;
+    }
+    
     @media (min-width: 320px) and (max-width: 767px){
  
-    .headerNav{
-        padding:0
+        .headerNav{
+            padding:0
+        }
+        .heroSection{
+            margin-top:144px;
+            height:300px;
+            margin-bottom:30px;
+        }
+        .caruselItem{
+            height:330px;
+            background-color: white;
+        
+        }
+        .caruselmobile{
+            width:100%;
+            background-color:#FAFAFA;
+            height:90px;
+        }
+        .caruselmobile h4{
+            padding:15px;
+            font-size: 18px;
+            font-family: "29lt-bukra-bold";
+            color:#393844;
+            text-align: center;
+        }        
+    
+        
+        .caruselImg{
+        width:100%;
+        height:210px
+        }
+        .caruselImg img{
+            height:100%;
+        }
+    .hero-carusel{
+        width:100%;
     }
-.heroSection{
-    height:500px;
-}
-.hero-carusel{
-    width:100%;
-}
-.hero-carusel .owl-dots{
-    display: block !important;
-}
+    .hero-carusel .owl-dot{
+        background-color: black !important;
+        border:1px solid black !important;
+    
+    }
+    .hero-carusel .owl-dot.active{
+        background-color: transparent !important;
+    
+    }
+    .hero-carusel .owl-dot{
+            right:30% !important;
+            bottom:-20%;
+        }
+    
+    
 .MoveImg,.secMoveImg {
     width:85%;
 }
@@ -681,17 +725,26 @@ text-decoration: none;
 .lowTitle{
     display: block
 }
+.passportImg{
+    width: 20%;
+    position: absolute;
+    bottom: -45px;
+    right: 5px;
+}
+
 .lowCont{
     padding:10px;
+    position: relative;
     margin-bottom:20px;
+    padding-top: 18px;
 }
 
 .lowdesc{
-    width:100%;
+    width:75%;
 }
-.passportImg{
-    width:80px;
-margin-top:-14%;}
+.lowCont h4{
+    font-size:18px;
+}
 .stepNum::before{display:none;}
 
 .nav{
@@ -731,12 +784,22 @@ display: block !important}
     display: none;
 }
 .nav-link{
+    padding:0;
+
     font-size: 13px;
 }
+.nav-link.activeLink{
+    color:#0072bb;
+   }
 .navCarusel {
     width:100%;
 }
-
+.navCarusel .owl-item{
+width:220px !important;
+}
+.navCarusel .owl-item .ProjectsLink{
+    width:260px !important;
+}
 .nav-item{
         display: inline-block;
 }
